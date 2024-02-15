@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { HibretLogo } from "../../../assets/";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -11,13 +12,22 @@ const Navbar = () => {
 
   const navLinks = [
     { title: "Home", to: "/" },
-    { title: "About me", to: "/about" },
+    { title: "About Us", to: "/about" },
+    { title: "Services", to: "/services" },
+    { title: "Gallery", to: "/gallery" },
+    { title: "Contact", to: "/contact" },
   ];
 
   return (
     <nav className="bg-transparent  p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-slate-500 text-2xl font-bold">Logo</h1>
+        <div className="flex items-center gap-5">
+          <img className="w-30 h-20" src={HibretLogo} alt="" />
+          <p>
+            <span className="text-[#96085c] text-2xl">ሕብረት</span>
+            <span className="text-[#224398] text-2xl">ትራንስፖርት</span>
+          </p>
+        </div>
 
         <div className="lg:hidden">
           {isMenuOpen ? (
@@ -43,7 +53,7 @@ const Navbar = () => {
               spy={true}
               offset={-100}
               to={link.to}
-              className="block text-slate-500 hover:text-gray-400 py-2"
+              className="block text-[#96085c] text-xl font-semibold hover:text-gray-400 py-2"
             >
               {link.title}
             </Link>
@@ -61,7 +71,7 @@ const Navbar = () => {
               spy={true}
               offset={-100}
               to={link.to}
-              className="block text-slate-500 hover:text-gray-400 py-2"
+              className="block text-[#96085c] text-2xl hover:text-gray-400 py-2"
             >
               {link.title}
             </Link>

@@ -1,31 +1,17 @@
+import About from "./sections/About";
+import Contact from "./sections/Contact";
+import Hero from "./sections/Hero";
+import Services from "./sections/Services";
+import Staff from "./sections/staff";
+
 const Home = () => {
   return (
     <div className="h-[150vh] ">
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
-      <div className="text-2xl">Home</div>
+      <Hero />
+      <Services />
+      <About />
+      <Staff />
+      <Contact />
     </div>
   );
 };
