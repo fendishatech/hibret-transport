@@ -23,9 +23,13 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center gap-5">
           <img className="w-30 h-20" src={HibretLogo} alt="" />
-          <p>
-            <span className="text-[#96085c] text-2xl">ሕብረት</span>
-            <span className="text-[#224398] text-2xl">ትራንስፖርት</span>
+          <p className="flex gap-2">
+            <span className="text-companyPink-400 font-bold text-2xl">
+              ሕብረት
+            </span>
+            <span className="text-companyBlue-400 font-bold text-2xl">
+              ትራንስፖርት
+            </span>
           </p>
         </div>
 

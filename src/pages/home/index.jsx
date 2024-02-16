@@ -6,7 +6,7 @@ import Staff from "./sections/staff";
 
 const Home = () => {
   return (
-    <div className="h-[150vh] ">
+    <div className="container mx-auto px-6 ">
       <Hero />
       <Services />
       <About />
